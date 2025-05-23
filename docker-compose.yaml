@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: postgres_messenger_db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: messenger_pg_db
+    ports:
+      - "5434:5432"
+    volumes:
+      - messenger_db:/var/lib/postgres/data
+volumes:
+  messenger_db:
