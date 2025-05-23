@@ -1,2 +1,2 @@
-# messanger
-a very original messanger
+# messenger
+a very original messenger
